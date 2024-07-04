@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+<form id="survey-form">
+  <div id="description"><i>GAME REVIEW</i></div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+     <i> <label class="left" id="name-label" for="name">NAME:</label></i>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="sub-group">
+     <i></i> <label class="left" id="email-label" for="email">EMAILl:</label></i>
+      <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+     <i> <label  class="left" id="number-label" for="number">AGE:</label></i>
+    <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
+  </div>
+
+    <div class="sub-group">
+     <i><label class="left" id="handphone-label" for="handphone">PHONE NUMBER:</label></i>
+
+    <input type="text" placeholder="Phone Number" class="right input-field" id="handphone">
+  </div>
+
+  </fieldset>
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<i><label class="left">
+  WHICH GAME HAVE U PLAYED?</label></i>
+
+ <ul style="list-style: none;" class="right">
+
+   <li class="checkbox"><label><input type="checkbox" name="game" value="badminton" >badminton</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="cricket">cricket</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="hockey" >hockey<label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="tennis" >tennis</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="basket ball" >basket ball</label></li>
+       </ul></div></fieldset>
+
+    <fieldset class="fieldset">
+  <div class="sub-group">
+  <i><label class="left" id="left-radio">WILL YOU RECOMMEND GAME TO YOU FRIENDS?</label></i>
+
+   <ul style="list-style: none" class="right">
+       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+   </ul>
+  </div></fieldset>
+
+     <fieldset class="fieldset">
+   <h2><i>ANY COMMENT SUGGESTION?</i></h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+   <button type="submit" value="submit">
+    <a href="fee 3.html">SUBMIT</a>
+  </button>
+  <button id="submit" type="submit">
+
+  
+       </div></fieldset>
+</form>
+</div>
+  </body>
