@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>JOB APPLICATION FORM</title>
+<style>h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    font-size: 5rem;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }</style>
+</head>
+<body>
+    <div class="wrapper six">
+        <div>
+            <h1>JOB APPLICATION FORM</h1>
+        </div>
+    </div>
+    
+<form><br><br><br>
+FIRST NAME:<input type="text" placeholder="first name"><br><br>
+LAST NAME:<input type="text" placeholder="last name"><br><br>
+GENDER:<br>MALE<input type="radio" name = "GENDER" value = "MALE">FEMALE<input type="radio" name = "GENDER" value = "FEMALE"><br><br>
+AGE:<input type="number" placeholder="age"><br><br>
+DATE OF BIRTH:<input type="date"><br><br>
+EMAIL ADDRSS:<input type="text" placeholder="enter your mail id"><br><br>
+PASSWORD:<input type="password" placeholder="enter password"><br><br>
+PHONE NUMBER:<select name="dropdown">
+    <option value="n1" selected>+91</option>
+    <option value="n2">+78</option>
+    </select>
+    <input type="phone" placeholder="Enter your phone number" id="phone" name="phone">
+    <br>
+    <br>
+  QUALIFICATION:<input type="text" placeholder="enter qualification"><br><br>
+<label for="add">ADDRESS:</label><br>
+<textarea rows = "5" cols = "50" name = "ADDRESS">
+    Enter address here...
+</textarea><br><br>
+STATE:<select name = "dropdown" placeholder="select your state">
+    <option value = "Punjab" selected>Punjab</option>
+    <option value = "Haryana">Haryana</option>
+    <option value = "Uttar pradesh">Uttar pradesh</option>
+    <option value = "Odisha">Odisha</option>
+    <option value = "Goa">Goa</option><br><br>
+</select>
+ <input type="number" placeholder=" ENTER YOUR PIN"><br><br>
+ <label for="UPLOAD PHOTO">UPLOAD PHOTO:</label><input type = "file" name = "fileupload" accept = "image/*"/>
+ <br>
+ <input type = "checkbox" name = "I hereby declare that the above information provided is true and corret" value = "on">I hereby declare that the above information provided is true and corret<br><br>
+ <input type = "submit" name = "submit" value = "Submit" />
+ <input type = "reset" name = "reset"  value = "Reset" /><br><br>
+</form>
+</body>
+</html>
