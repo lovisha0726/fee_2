@@ -1,0 +1,17 @@
+/* decesendent combination selsctor */
+ul li a{
+    color: aquamarine;
+    font: 20px;
+}
+/* child combination selector */
+ol>li{
+    background-color: beige;
+}
+/* adjustment combination selector */
+h3+p{
+    border-top: 2px solid brown;
+}
+/* general siblings */
+div~p{
+    background-color: blue;
+}
