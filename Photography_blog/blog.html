@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Blog</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 80vw;
+    margin: 20px auto; 
+    display: grid;
+    grid-auto-rows: 200px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+
+div{
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Parent k jo hoga woh hi image ka de dege height and width */
+div img{
+    width: 100%;
+    height: 100%;
+    /* 1.border radius */
+    border-radius: 10px;
+    transition: 200ms;
+    
+}
+
+/* 2.hover effect: change image opacity*/
+
+div img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    filter: grayscale(80%);
+}
+
+/* nav styling: */
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    margin-left: 50px;
+}
+
+i{
+ margin-right: 10px;
+}
+
+nav{
+    background-color: #6E3832;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* icon over image: */
+div i{
+    position: absolute;
+    font-size: 3.4rem;
+    top: 40%;
+    left: 45%;
+    transform: scale(0);
+    transition: 300ms;
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);;
+}
+
+div:hover i{
+    transform: scale(1.1);
+}
+
+/* heading css */
+#heading{
+   width: 77vw;
+   margin: 20px auto;
+   padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(239, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading h1{
+    color: rgb(22,22,141);
+}
+    </style>
+    <script src="https://kit.fontawesome.com/416c646b1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href=""><i class="fa-duotone fa-solid fa-camera-retro" aria-hidden="true"></i>Photography Blog</a></li>
+            </ul>
+        </nav>
+    
+        <section id="heading">
+            <h1>Images</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consequatur!</p>
+        </section>
+    
+    
+        <section id="container">
+            <div>
+                <img src="https://images.unsplash.com/photo-1721423297705-f7da8f386dc4?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1708162665956-98da095550ea?w=1000&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1721552491752-0d8cbc2a46a9?w=1000&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1447300546021-b4d87d45bde1?w=1000&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1721297013604-c6e1dc5639e2?w=1000&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            </div>
+    
+        </section>
+    
+    
+    <span id="PING_CONTENT_AUTOPLAY_DETECTION" style="display: none;"></span></body>
+</body>
+</html>
