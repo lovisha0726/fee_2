@@ -1,0 +1,29 @@
+section{
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    border: 3px solid gray;
+    transition-duration: 5s;
+    transition-property: background-color;
+    transition-delay: 2s;
+
+}
+section:hover{
+    border-radius: 50%;
+    background-color: aqua;
+}
+article{
+    margin: 20px;
+    border: 2px solid black;
+}
+article div{
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+    border: 2px;
+    margin: 5px;
+}
+article:hover div{
+    margin-left: 900px;
+}
+div:nth-last-of-type()
