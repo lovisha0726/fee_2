@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile">
+        <div class="profile-display">
+            <div class="profile-img">
+                <img id="displayPicture" src="profilepic.jpg" alt="Profile Picture">
+            </div>
+            <h2 id="displayName">Lovisha</h2>
+            <p id="displayBio">Not like the rest of them.</p>
+        </div>
+
+        <form id="profileForm">
+            <div class="profile-img">
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            
+            <label for="nameInput">Update Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name" >
+
+            <label for="bioInput">Update Bio:</label>
+            <textarea id="bioInput" placeholder="Write something about yourself"></textarea>
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
